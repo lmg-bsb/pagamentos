@@ -1,0 +1,13 @@
+br/edu/infnet/pagamentos/model/domain/Dinheiro.class
+br/edu/infnet/pagamentos/model/test/DinheiroTeste.class
+br/edu/infnet/pagamentos/model/test/CartaoTeste.class
+br/edu/infnet/pagamentos/model/test/ClienteTeste.class
+br/edu/infnet/pagamentos/model/test/ChequeTeste.class
+br/edu/infnet/pagamentos/model/domain/Pagamento.class
+br/edu/infnet/pagamentos/model/domain/Produto.class
+br/edu/infnet/pagamentos/model/domain/Cliente.class
+br/edu/infnet/pagamentos/model/domain/Cartao.class
+br/edu/infnet/pagamentos/model/test/ProdutoTeste.class
+br/edu/infnet/pagamentos/model/test/PagamentoTeste.class
+br/edu/infnet/pagamentos/model/domain/Cheque.class
+br/edu/infnet/pagamentos/PagamentosApplication.class

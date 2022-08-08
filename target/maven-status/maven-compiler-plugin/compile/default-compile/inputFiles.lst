@@ -1,0 +1,13 @@
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Cheque.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/ClienteTeste.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Pagamento.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Cartao.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/ChequeTeste.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/DinheiroTeste.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/ProdutoTeste.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Produto.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/PagamentosApplication.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Dinheiro.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/PagamentoTeste.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/domain/Cliente.java
+/home/le/projetos_remotos/pagamentos/src/main/java/br/edu/infnet/pagamentos/model/test/CartaoTeste.java
