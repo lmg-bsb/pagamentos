@@ -14,21 +14,21 @@ public class ClienteTeste implements ApplicationRunner{
 		System.out.println("\n#Cliente");
 		
 		Cliente c1 = new Cliente();
-		c1.endereco = "Brasília";
-		c1.nome = "José";
-		c1.telefone = "61-2345678";
+		c1.setEndereco("Brasília");
+		c1.setNome("José");
+		c1.setTelefone("61-2345678");
 		System.out.println(c1);
 		
 		Cliente c2 = new Cliente();
-		c2.endereco = "São Paulo";
-		c2.nome = "Maria";
-		c2.telefone="11-123456789";
+		c2.setEndereco("São Paulo");
+		c2.setNome("Maria");
+		c2.setTelefone("11-123456789");
 		System.out.println(c2);
 		
 		Cliente c3 = new Cliente();
-		c3.endereco = "Maranhão";
-		c3.nome = "Tadeu";
-		c3.telefone = "98-987654321";
+		c3.setEndereco("Maranhão");
+		c3.setNome("Tadeu");
+		c3.setTelefone("98-987654321");
 		System.out.println(c3);
 		
 	}

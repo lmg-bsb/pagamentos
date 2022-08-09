@@ -14,21 +14,21 @@ public class ProdutoTeste implements ApplicationRunner{
 		System.out.println("\n#Produto");
 		
 		Produto p1 = new Produto();
-		p1.descricao = "Pen Drive";
-		p1.peso = 0.100;
-		p1.preco = 152.37;
+		p1.setDescricao("Pen Drive");
+		p1.setPeso(0.100);
+		p1.setPreco(152.37);
 		System.out.println(p1);
 		
 		Produto p2 = new Produto();
-		p2.descricao = "Notebook Dell XPS 13";
-		p2.peso = 1.9;
-		p2.preco = 13000;
+		p2.setDescricao("Notebook Dell XPS 13");
+		p2.setPeso(1.9);
+		p2.setPreco(13000);
 		System.out.println(p2);
 		
 		Produto p3 = new Produto();
-		p3.descricao = "Celular Xiaomi MI 12 Ultra";
-		p3.peso = 0.2;
-		p3.preco = 5700;
+		p3.setDescricao("Celular Xiaomi MI 12 Ultra");
+		p3.setPeso(0.2);
+		p3.setPreco(5700);
 		System.out.println(p3);
 	}
 

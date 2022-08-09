@@ -1,14 +1,38 @@
 package br.edu.infnet.pagamentos.model.domain;
 
-public class Cheque {
+public class Cheque extends Pagamento{
 
-	public String banco;
-	public String agencia;
-	public String conta;
+	private String banco;
+	private String agencia;
+	private String conta;
 	
+	public String getBanco() {
+		return banco;
+	}
+
+	public void setBanco(String banco) {
+		this.banco = banco;
+	}
+
+	public String getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+
+	public String getConta() {
+		return conta;
+	}
+
+	public void setConta(String conta) {
+		this.conta = conta;
+	}
+
 	@Override
 	public String toString() {
 
-		return banco + ";" + agencia + ";" + conta;
+		return banco + ";" + agencia + ";" + conta + super.toString();
 	}
 }

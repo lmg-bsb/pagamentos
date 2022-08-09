@@ -4,10 +4,34 @@ import java.time.LocalDate;
 
 public class Pagamento {
 
-	public int codigo;
-	public double quantidade;
-	public LocalDate data;
+	private int codigo;
+	private double quantidade;
+	private LocalDate data;
 	
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public double getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(double quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public LocalDate getData() {
+		return data;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+
 	@Override
 	public String toString() {
 
