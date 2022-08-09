@@ -59,12 +59,12 @@
 				</tr>
 				<tr>
 					<td>peso</td>
-					<td>float</td>
+					<td>double</td>
 					<td>Peso do produto</td>
 				</tr>
 				<tr>
 					<td>preco</td>
-					<td>float</td>
+					<td>double</td>
 					<td>Preço do produto</td>
 				</tr>
 			</tbody>
@@ -87,7 +87,7 @@
 				</tr>
 				<tr>
 					<td>quantidade</td>
-					<td>float</td>
+					<td>double</td>
 					<td>Quantidade de dinheiro pago</td>
 				</tr>
 				<tr>
