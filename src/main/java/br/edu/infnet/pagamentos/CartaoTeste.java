@@ -7,13 +7,14 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.pagamentos.model.domain.Cartao;
+import br.edu.infnet.pagamentos.model.test.AppPagamento;
 
 @Component
 public class CartaoTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Cartão");
+		System.out.println("\n#Cartões");
 	
 		Cartao c1 = new Cartao();
 		c1.setCodigo(4);
@@ -22,7 +23,8 @@ public class CartaoTeste implements ApplicationRunner{
 		c1.setCvv("345");
 		c1.setNumero("9786.1432.0129.4567");
 		c1.setValidade(LocalDate.of(2023, 12, 22));
-		System.out.println(c1);
+
+		new AppPagamento("Primeiro cartão").relatorio(c1);
 		
 		Cartao c2 = new Cartao();
 		c2.setCodigo(5);
@@ -31,7 +33,8 @@ public class CartaoTeste implements ApplicationRunner{
 		c2.setCvv("908");
 		c2.setNumero("9876.1234.8475.0987");
 		c2.setValidade(LocalDate.of(2029, 01, 01));
-		System.out.println(c2);
+		
+		new AppPagamento("Segundo cartão").relatorio(c2);
 		
 		Cartao c3 = new Cartao();
 		c3.setCodigo(6);
@@ -40,6 +43,7 @@ public class CartaoTeste implements ApplicationRunner{
 		c3.setCvv("222");
 		c3.setNumero("0909.7654.1212.3456");
 		c3.setValidade(LocalDate.of(2050, 06, 28));
-		System.out.println(c3);
+		
+		new AppPagamento("Terceiro cartão").relatorio(c3);
 	}
 }

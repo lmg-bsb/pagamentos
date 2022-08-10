@@ -48,7 +48,7 @@ public class Cartao extends Pagamento{
 
 	@Override
 	public void impressao() {
-		System.out.println("Cartao");
+		System.out.println("#Cartao");
 		System.out.println(this);
 	}
 }

@@ -7,13 +7,14 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.pagamentos.model.domain.Cheque;
+import br.edu.infnet.pagamentos.model.test.AppPagamento;
 
 @Component
 public class ChequeTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Cheque");
+		System.out.println("\n#Cheques");
 		
 		Cheque c1 = new Cheque();
 		c1.setCodigo(7);
@@ -22,7 +23,8 @@ public class ChequeTeste implements ApplicationRunner{
 		c1.setBanco("001");
 		c1.setAgencia("987");
 		c1.setConta("2349-0");		
-		System.out.println(c1);
+		
+		new AppPagamento("Primeiro Cheque").relatorio(c1);
 		
 		Cheque c2 = new Cheque();
 		c2.setCodigo(8);
@@ -31,7 +33,8 @@ public class ChequeTeste implements ApplicationRunner{
 		c2.setBanco("237");
 		c2.setAgencia("002");
 		c2.setConta("98654-9");		
-		System.out.println(c2);
+		
+		new AppPagamento("Segundo Cheque").relatorio(c2);
 		
 		Cheque c3 = new Cheque();
 		c3.setCodigo(9);
@@ -40,7 +43,8 @@ public class ChequeTeste implements ApplicationRunner{
 		c3.setBanco("104");
 		c3.setAgencia("3488");
 		c3.setConta("730876-1");		
-		System.out.println(c3);
+		
+		new AppPagamento("Terceiro Cheque").relatorio(c3);
 	}
 
 }
