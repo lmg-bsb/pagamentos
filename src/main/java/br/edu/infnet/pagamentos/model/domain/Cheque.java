@@ -30,6 +30,7 @@ public class Cheque extends Pagamento{
 		this.conta = conta;
 	}
 
+	//defina que uma classe filha tenha o mesmo comportamento do método da mãe.
 	@Override
 	public String toString() {
 

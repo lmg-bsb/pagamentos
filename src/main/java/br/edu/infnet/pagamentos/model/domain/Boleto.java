@@ -32,6 +32,15 @@ public class Boleto extends Pagamento{
 		this.linhaDigitavel = linhaDigitavel;
 	}
 
+	//defina que a segunda classe filha tenha um comportamento completamente diferente da mãe.
+	@Override
+	public double valorFinanciado() {
+		
+		//Verifica se o boleto está vencido
+		double valor = getDataVencimento().compareTo(getData()) < 0?getValor()*2: getValor()*0.9;
+		return valor;
+	}
+	
 	@Override
 	public String toString() {
 

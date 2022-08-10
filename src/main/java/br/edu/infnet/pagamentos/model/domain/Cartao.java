@@ -32,6 +32,14 @@ public class Cartao extends Pagamento{
 		this.cvv = cvv;
 	}
 
+	//defina que a terceira classe filha tenha o comportamento da mãe com algum complemento específico.
+	@Override
+	public double valorFinanciado() {
+		
+		int desconto = getValor() > 100? 20:5;
+		// TODO Auto-generated method stub
+		return super.valorFinanciado() * (100 - desconto)/100;
+	}
 	@Override
 	public String toString() {
 

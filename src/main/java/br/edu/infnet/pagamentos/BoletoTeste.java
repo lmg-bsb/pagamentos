@@ -19,7 +19,7 @@ public class BoletoTeste implements ApplicationRunner{
 		b1.setCodigo(1);
 		b1.setData(LocalDate.now());
 		b1.setValor(9);
-		b1.setDataVencimento(LocalDate.of(2022,9,07));
+		b1.setDataVencimento(LocalDate.of(2022,1,01));
 		b1.setLinhaDigitavel("989843.7593845.345793845.983475.1.98237498");
 		b1.setNossoNumero("346768");
 		System.out.println(b1);
