@@ -32,7 +32,10 @@ public class Produto {
 
 	@Override
 	public String toString() {
-
 		return descricao + ";" + peso + ";" + preco;
+	}
+	public void impressao() {
+		System.out.println("#Produto");
+		System.out.println(this);
 	}
 }

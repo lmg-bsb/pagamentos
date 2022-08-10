@@ -32,7 +32,11 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-
 		return nome + ";" + telefone + ";" + endereco;
+	}
+	
+	public void impressao() {
+		System.out.println("#Cliente");
+		System.out.println(this);
 	}
 }
