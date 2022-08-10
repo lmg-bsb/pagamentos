@@ -45,4 +45,10 @@ public class Cartao extends Pagamento{
 
 		return numero + ";" + cvv + ";" + validade + ";" + super.toString();
 	}
+
+	@Override
+	public void impressao() {
+		System.out.println("Cartao");
+		System.out.println(this);
+	}
 }

@@ -2,7 +2,7 @@ package br.edu.infnet.pagamentos.model.domain;
 
 import java.time.LocalDate;
 
-public class Pagamento {
+public abstract class Pagamento {
 
 	private int codigo;
 	private double valor;
@@ -40,4 +40,6 @@ public class Pagamento {
 
 		return codigo + ";" + valor + ";" + data + ";Valor financiado: " + valorFinanciado();
 	}
+	
+	public abstract void impressao();
 }
