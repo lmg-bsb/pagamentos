@@ -18,7 +18,7 @@ public class BoletoTeste implements ApplicationRunner{
 		Boleto b1 = new Boleto();
 		b1.setCodigo(1);
 		b1.setData(LocalDate.now());
-		b1.setQuantidade(9);
+		b1.setValor(9);
 		b1.setDataVencimento(LocalDate.of(2022,9,07));
 		b1.setLinhaDigitavel("989843.7593845.345793845.983475.1.98237498");
 		b1.setNossoNumero("346768");
@@ -27,7 +27,7 @@ public class BoletoTeste implements ApplicationRunner{
 		Boleto b2 = new Boleto();
 		b2.setCodigo(2);
 		b2.setData(LocalDate.now());
-		b2.setQuantidade(24);
+		b2.setValor(24);
 		b2.setDataVencimento(LocalDate.of(2023,12,25));
 		b2.setLinhaDigitavel("98328.3274.928.349324.0.567895678");
 		b2.setNossoNumero("102938");
@@ -36,7 +36,7 @@ public class BoletoTeste implements ApplicationRunner{
 		Boleto b3 = new Boleto();
 		b3.setCodigo(3);
 		b3.setData(LocalDate.now());
-		b3.setQuantidade(15);
+		b3.setValor(15);
 		b3.setDataVencimento(LocalDate.of(2024,5,01));
 		b3.setLinhaDigitavel("6789.65432.6789.532.6.4567898767100");
 		b3.setNossoNumero("2345678");

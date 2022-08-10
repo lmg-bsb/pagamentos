@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Pagamento {
 
 	private int codigo;
-	private double quantidade;
+	private double valor;
 	private LocalDate data;
 	
 	public int getCodigo() {
@@ -16,12 +16,12 @@ public class Pagamento {
 		this.codigo = codigo;
 	}
 
-	public double getQuantidade() {
-		return quantidade;
+	public double getValor() {
+		return valor;
 	}
 
-	public void setQuantidade(double quantidade) {
-		this.quantidade = quantidade;
+	public void setValor(double quantidade) {
+		this.valor = quantidade;
 	}
 
 	public LocalDate getData() {
@@ -32,9 +32,12 @@ public class Pagamento {
 		this.data = data;
 	}
 
+	public double valorFinanciado() {
+		return valor*10;
+	}
 	@Override
 	public String toString() {
 
-		return codigo + ";" + quantidade + ";" + data;
+		return codigo + ";" + valor + ";" + data + ";Valor financiado: " + valorFinanciado();
 	}
 }

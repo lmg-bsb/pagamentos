@@ -86,7 +86,7 @@
 					<td>Código do pagamento</td>
 				</tr>
 				<tr>
-					<td>quantidade</td>
+					<td>valor</td>
 					<td>double</td>
 					<td>Quantidade de dinheiro pago</td>
 				</tr>
