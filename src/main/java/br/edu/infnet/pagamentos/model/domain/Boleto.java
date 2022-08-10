@@ -35,6 +35,6 @@ public class Boleto extends Pagamento{
 	@Override
 	public String toString() {
 
-		return nossoNumero + ";" + dataVencimento + ";" + linhaDigitavel + super.toString();
+		return nossoNumero + ";" + dataVencimento + ";" + linhaDigitavel + ";" + super.toString();
 	}
 }
