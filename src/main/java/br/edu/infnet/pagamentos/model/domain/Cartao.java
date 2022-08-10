@@ -35,6 +35,6 @@ public class Cartao extends Pagamento{
 	@Override
 	public String toString() {
 
-		return numero + ";" + cvv + ";" + validade + super.toString();
+		return numero + ";" + cvv + ";" + validade + ";" + super.toString();
 	}
 }

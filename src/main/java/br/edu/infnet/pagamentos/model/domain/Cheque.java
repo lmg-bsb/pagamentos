@@ -33,6 +33,6 @@ public class Cheque extends Pagamento{
 	@Override
 	public String toString() {
 
-		return banco + ";" + agencia + ";" + conta + super.toString();
+		return banco + ";" + agencia + ";" + conta + ";" + super.toString();
 	}
 }
