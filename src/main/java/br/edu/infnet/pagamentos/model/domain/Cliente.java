@@ -1,6 +1,8 @@
 package br.edu.infnet.pagamentos.model.domain;
 
-public class Cliente {
+import br.edu.infnet.pagamentos.interfaces.IPrinter;
+
+public class Cliente implements IPrinter{
 
 	private String nome;
 	private String telefone;
@@ -34,9 +36,15 @@ public class Cliente {
 	public String toString() {
 		return nome + ";" + telefone + ";" + endereco;
 	}
-	
+
+	@Override
 	public void impressao() {
 		System.out.println("#Cliente");
-		System.out.println(this);
+		System.out.println(this);		
 	}
+	
+//	public void impressao() {
+//		System.out.println("#Cliente");
+//		System.out.println(this);
+//	}
 }

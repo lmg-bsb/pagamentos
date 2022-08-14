@@ -1,6 +1,8 @@
 package br.edu.infnet.pagamentos.model.domain;
 
-public class Produto {
+import br.edu.infnet.pagamentos.interfaces.IPrinter;
+
+public class Produto implements IPrinter{
 
 	private String descricao;
 	private double peso;
@@ -34,8 +36,14 @@ public class Produto {
 	public String toString() {
 		return descricao + ";" + peso + ";" + preco;
 	}
+	
+	@Override
 	public void impressao() {
-		System.out.println("#Produto");
-		System.out.println(this);
+		System.out.println("#Cliente");
+		System.out.println(this);		
 	}
+//	public void impressao() {
+//		System.out.println("#Produto");
+//		System.out.println(this);
+//	}
 }

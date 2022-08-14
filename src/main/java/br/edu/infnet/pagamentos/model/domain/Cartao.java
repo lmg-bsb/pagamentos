@@ -38,13 +38,14 @@ public class Cartao extends Pagamento{
 		
 		int desconto = getValor() > 100? 20:5;
 		// TODO Auto-generated method stub
-		return super.valorFinanciado() * (100 - desconto)/100;
+		return getValor()*10 * (100 - desconto)/100;
 	}
 	@Override
 	public String toString() {
 
 		return numero + ";" + cvv + ";" + validade + ";" + super.toString();
 	}
+
 
 	@Override
 	public void impressao() {

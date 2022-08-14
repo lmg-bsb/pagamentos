@@ -7,7 +7,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.pagamentos.model.domain.Cartao;
-import br.edu.infnet.pagamentos.model.test.AppPagamento;
+import br.edu.infnet.pagamentos.model.test.AppImpressao;
 
 @Component
 public class CartaoTeste implements ApplicationRunner{
@@ -24,7 +24,7 @@ public class CartaoTeste implements ApplicationRunner{
 		c1.setNumero("9786.1432.0129.4567");
 		c1.setValidade(LocalDate.of(2023, 12, 22));
 
-		new AppPagamento("Primeiro cartão").relatorio(c1);
+		new AppImpressao("Primeiro cartão").relatorio(c1);
 		
 		Cartao c2 = new Cartao();
 		c2.setCodigo(5);
@@ -34,7 +34,7 @@ public class CartaoTeste implements ApplicationRunner{
 		c2.setNumero("9876.1234.8475.0987");
 		c2.setValidade(LocalDate.of(2029, 01, 01));
 		
-		new AppPagamento("Segundo cartão").relatorio(c2);
+		new AppImpressao("Segundo cartão").relatorio(c2);
 		
 		Cartao c3 = new Cartao();
 		c3.setCodigo(6);
@@ -44,6 +44,6 @@ public class CartaoTeste implements ApplicationRunner{
 		c3.setNumero("0909.7654.1212.3456");
 		c3.setValidade(LocalDate.of(2050, 06, 28));
 		
-		new AppPagamento("Terceiro cartão").relatorio(c3);
+		new AppImpressao("Terceiro cartão").relatorio(c3);
 	}
 }

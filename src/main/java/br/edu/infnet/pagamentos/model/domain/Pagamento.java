@@ -2,7 +2,9 @@ package br.edu.infnet.pagamentos.model.domain;
 
 import java.time.LocalDate;
 
-public abstract class Pagamento {
+import br.edu.infnet.pagamentos.interfaces.IPrinter;
+
+public abstract class Pagamento implements IPrinter {
 
 	private int codigo;
 	private double valor;
@@ -32,14 +34,23 @@ public abstract class Pagamento {
 		this.data = data;
 	}
 
-	public double valorFinanciado() {
-		return valor*10;
-	}
+//	public double valorFinanciado() {
+//		return valor*10;
+//	}
+	
+	public abstract double valorFinanciado();
+	
 	@Override
 	public String toString() {
 
 		return codigo + ";" + valor + ";" + data + ";Valor financiado: " + valorFinanciado();
 	}
+
+	@Override
+	public void impressao() {
+		// TODO Auto-generated method stub
+		
+	}
 	
-	public abstract void impressao();
+//	public abstract void impressao();
 }

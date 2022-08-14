@@ -47,6 +47,8 @@ public class Boleto extends Pagamento{
 		return nossoNumero + ";" + dataVencimento + ";" + linhaDigitavel + ";" + super.toString();
 	}
 
+
+
 	@Override
 	public void impressao() {
 		System.out.println("#Boleto");

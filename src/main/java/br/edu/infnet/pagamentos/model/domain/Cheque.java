@@ -37,9 +37,16 @@ public class Cheque extends Pagamento{
 		return banco + ";" + agencia + ";" + conta + ";" + super.toString();
 	}
 
+
 	@Override
 	public void impressao() {
 		System.out.println("#Cheque");
 		System.out.println(this);
+	}
+
+	@Override
+	public double valorFinanciado() {
+		// TODO Auto-generated method stub
+		return getValor()*10;
 	}
 }

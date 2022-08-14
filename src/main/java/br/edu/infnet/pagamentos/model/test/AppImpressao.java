@@ -2,11 +2,11 @@ package br.edu.infnet.pagamentos.model.test;
 
 import br.edu.infnet.pagamentos.model.domain.Pagamento;
 
-public class AppPagamento {
+public class AppImpressao {
 	
 	private  String mensagem;
 
-	public AppPagamento(String mensagem) {
+	public AppImpressao(String mensagem) {
 		this.mensagem = mensagem;
 	}
 	
