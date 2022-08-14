@@ -24,7 +24,7 @@ public class ChequeTeste implements ApplicationRunner{
 		c1.setAgencia("987");
 		c1.setConta("2349-0");		
 		
-		new AppImpressao("Primeiro Cheque").relatorio(c1);
+		AppImpressao.relatorio("Primeiro Cheque", c1);
 		
 		Cheque c2 = new Cheque();
 		c2.setCodigo(8);
@@ -34,7 +34,7 @@ public class ChequeTeste implements ApplicationRunner{
 		c2.setAgencia("002");
 		c2.setConta("98654-9");		
 		
-		new AppImpressao("Segundo Cheque").relatorio(c2);
+		AppImpressao.relatorio("Segundo Cheque", c2);
 		
 		Cheque c3 = new Cheque();
 		c3.setCodigo(9);
@@ -44,7 +44,7 @@ public class ChequeTeste implements ApplicationRunner{
 		c3.setAgencia("3488");
 		c3.setConta("730876-1");		
 		
-		new AppImpressao("Terceiro Cheque").relatorio(c3);
+		AppImpressao.relatorio("Terceiro Cheque", c3);
 	}
 
 }

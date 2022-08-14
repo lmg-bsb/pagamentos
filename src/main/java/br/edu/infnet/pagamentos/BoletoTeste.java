@@ -24,7 +24,7 @@ public class BoletoTeste implements ApplicationRunner{
 		b1.setLinhaDigitavel("989843.7593845.345793845.983475.1.98237498");
 		b1.setNossoNumero("346768");
 		
-		new AppImpressao("Primeiro boleto").relatorio(b1);
+		AppImpressao.relatorio("Primeiro boleto", b1);
 		
 		Boleto b2 = new Boleto();
 		b2.setCodigo(2);
@@ -34,7 +34,7 @@ public class BoletoTeste implements ApplicationRunner{
 		b2.setLinhaDigitavel("98328.3274.928.349324.0.567895678");
 		b2.setNossoNumero("102938");
 		
-		new AppImpressao("Segundo boleto").relatorio(b2);
+		AppImpressao.relatorio("Segundo boleto", b2);
 		
 		Boleto b3 = new Boleto();
 		b3.setCodigo(3);
@@ -44,6 +44,6 @@ public class BoletoTeste implements ApplicationRunner{
 		b3.setLinhaDigitavel("6789.65432.6789.532.6.4567898767100");
 		b3.setNossoNumero("2345678");
 		
-		new AppImpressao("Terceiro boleto").relatorio(b3);
+		AppImpressao.relatorio("Terceiro boleto", b3);
 	}
 }
