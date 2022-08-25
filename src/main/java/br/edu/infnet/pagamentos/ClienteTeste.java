@@ -12,7 +12,7 @@ public class ClienteTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Cliente");
+		System.out.println("\n###CLIENTES###");
 		
 		Cliente c1 = new Cliente("José", "61-2345678", "Brasília");
 		System.out.println(c1);

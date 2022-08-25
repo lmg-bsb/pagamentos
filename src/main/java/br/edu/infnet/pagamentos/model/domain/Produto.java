@@ -9,6 +9,9 @@ public class Produto implements IPrinter{
 	private double preco;
 	private Cliente cliente;
 	
+	public Produto(String nome, String telefone, String endereco) {
+		cliente = new Cliente(nome, telefone, endereco);
+	}
 	public String getDescricao() {
 		return descricao;
 	}
@@ -48,12 +51,6 @@ public class Produto implements IPrinter{
 //		System.out.println(this);
 //	}
 
-	public Cliente getCliente() {
-		return cliente;
-	}
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
 	
 }

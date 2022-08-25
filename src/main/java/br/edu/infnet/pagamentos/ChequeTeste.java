@@ -14,7 +14,7 @@ public class ChequeTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Cheques");
+		System.out.println("\n###CHEQUES###");
 		
 		Cheque c1 = new Cheque();
 		c1.setCodigo(7);

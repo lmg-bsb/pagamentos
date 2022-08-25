@@ -14,7 +14,7 @@ public class CartaoTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Cartões");
+		System.out.println("\n###CARTÕES###");
 	
 		Cartao c1 = new Cartao();
 		c1.setCodigo(4);

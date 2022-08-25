@@ -14,7 +14,7 @@ public class BoletoTeste implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println("\n#Boletos");
+		System.out.println("\n###BOLETOS###");
 		
 		Boleto b1 = new Boleto();
 		b1.setCodigo(1);
