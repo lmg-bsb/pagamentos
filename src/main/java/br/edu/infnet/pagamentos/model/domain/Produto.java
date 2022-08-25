@@ -35,7 +35,7 @@ public class Produto implements IPrinter{
 
 	@Override
 	public String toString() {
-		return descricao + ";" + peso + ";" + preco;
+		return descricao + "; " + peso + "; " + preco + "; " + cliente;
 	}
 	
 	@Override

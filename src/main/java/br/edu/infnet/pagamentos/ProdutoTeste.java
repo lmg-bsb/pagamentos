@@ -24,7 +24,6 @@ public class ProdutoTeste implements ApplicationRunner{
 		p1.setPeso(0.100);
 		p1.setPreco(152.37);
 		p1.setCliente(c1);
-		System.out.println(p1);
 		AppImpressao.relatorio("Inclusão do Produto P1", p1);
 		
 		Produto p2 = new Produto();
@@ -32,7 +31,6 @@ public class ProdutoTeste implements ApplicationRunner{
 		p2.setPeso(1.9);
 		p2.setPreco(13000);
 		p2.setCliente(c2);
-		System.out.println(p2);
 		AppImpressao.relatorio("Inclusão do Produto P2", p2);
 		
 		Produto p3 = new Produto();
@@ -40,7 +38,6 @@ public class ProdutoTeste implements ApplicationRunner{
 		p3.setPeso(0.2);
 		p3.setPreco(5700);
 		p3.setCliente(c3);
-		System.out.println(p3);
 		AppImpressao.relatorio("Inclusão do Produto P3", p3);
 	}
 

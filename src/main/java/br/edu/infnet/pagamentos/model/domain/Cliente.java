@@ -40,7 +40,7 @@ public class Cliente implements IPrinter{
 
 	@Override
 	public String toString() {
-		return nome + ";" + telefone + ";" + endereco;
+		return nome + "; " + telefone + "; " + endereco;
 	}
 
 	@Override
