@@ -9,8 +9,8 @@ public class Produto implements IPrinter{
 	private double preco;
 	private Cliente cliente;
 	
-	public Produto(String nome, String telefone, String endereco) {
-		cliente = new Cliente(nome, telefone, endereco);
+	public Produto(Cliente cliente) {
+		this.cliente = cliente;
 	}
 	public String getDescricao() {
 		return descricao;
