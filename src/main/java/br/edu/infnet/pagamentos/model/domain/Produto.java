@@ -1,6 +1,6 @@
 package br.edu.infnet.pagamentos.model.domain;
 
-import java.util.List;
+import java.util.Set;
 
 import br.edu.infnet.pagamentos.interfaces.IPrinter;
 
@@ -10,7 +10,7 @@ public class Produto implements IPrinter{
 	private double peso;
 	private double preco;
 	private Cliente cliente;
-	private List<Pagamento> pagamentos;
+	private Set<Pagamento> pagamentos;
 	
 	public Produto(Cliente cliente) {
 		this.cliente = cliente;
@@ -49,10 +49,10 @@ public class Produto implements IPrinter{
 		System.out.println("#Cliente");
 		System.out.println(this);		
 	}
-	public List<Pagamento> getPagamentos() {
+	public Set<Pagamento> getPagamentos() {
 		return pagamentos;
 	}
-	public void setPagamentos(List<Pagamento> pagamentos) {
+	public void setPagamentos(Set<Pagamento> pagamentos) {
 		this.pagamentos = pagamentos;
 	}
 }

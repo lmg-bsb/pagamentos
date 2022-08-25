@@ -1,6 +1,7 @@
 package br.edu.infnet.pagamentos.model.domain;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 import br.edu.infnet.pagamentos.interfaces.IPrinter;
 
@@ -51,6 +52,22 @@ public abstract class Pagamento implements IPrinter {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(codigo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+		Pagamento other = (Pagamento) obj;
+		return codigo == other.codigo;
+	}
 	
-//	public abstract void impressao();
 }

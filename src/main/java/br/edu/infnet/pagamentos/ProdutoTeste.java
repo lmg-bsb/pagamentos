@@ -1,8 +1,8 @@
 package br.edu.infnet.pagamentos;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -32,7 +32,7 @@ public class ProdutoTeste implements ApplicationRunner{
 		b1.setNossoNumero("346768");
 		
 		Cartao crd1 = new Cartao();
-		crd1.setCodigo(4);
+		crd1.setCodigo(3);
 		crd1.setData(LocalDate.now());
 		crd1.setValor(345);
 		crd1.setCvv("345");
@@ -40,14 +40,14 @@ public class ProdutoTeste implements ApplicationRunner{
 		crd1.setValidade(LocalDate.of(2023, 12, 22));
 		
 		Cheque ch1 = new Cheque();
-		ch1.setCodigo(7);
+		ch1.setCodigo(5);
 		ch1.setData(LocalDate.now());
 		ch1.setValor(567890);
 		ch1.setBanco("001");
 		ch1.setAgencia("987");
 		ch1.setConta("2349-0");	
 		
-		List<Pagamento> lp1 = new ArrayList<Pagamento>();
+		Set<Pagamento> lp1 = new HashSet<Pagamento>();
 		lp1.add(ch1);
 		lp1.add(crd1);		
 		Cliente c1 = new Cliente("José", "61-2345678", "Brasília");
@@ -59,7 +59,7 @@ public class ProdutoTeste implements ApplicationRunner{
 		AppImpressao.relatorio("Inclusão do Produto P1", p1);
 		
 		
-		List<Pagamento> lp2 = new ArrayList<Pagamento>();
+		Set<Pagamento> lp2 = new HashSet<Pagamento>();
 		lp2.add(ch1);
 		Cliente c2 = new Cliente("Maria", "11-123456789", "São Paulo");
 		Produto p2 = new Produto(c2);
@@ -70,9 +70,10 @@ public class ProdutoTeste implements ApplicationRunner{
 		AppImpressao.relatorio("Inclusão do Produto P2", p2);
 		
 		
-		List<Pagamento> lp3 = new ArrayList<Pagamento>();
+		Set<Pagamento> lp3 = new HashSet<Pagamento>();
 		lp3.add(crd1);
 		lp3.add(b1);
+		lp3.add(ch1);
 		lp3.add(ch1);
 		Cliente c3 = new Cliente("Tadeu", "98-987654321", "Maranhão");
 		Produto p3 = new Produto(c3);
