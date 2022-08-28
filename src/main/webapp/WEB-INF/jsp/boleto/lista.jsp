@@ -1,13 +1,14 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<link
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-		rel="stylesheet">
-	<meta charset="ISO-8859-1">
-	<title>Pagamentos</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<meta charset="ISO-8859-1">
+<title>Pagamentos</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-light">
@@ -26,7 +27,7 @@
 		<h2>AppPagamentos</h2>
 		<p>Projeto de Gestão de Pagamentos</p>
 
-		
+
 
 		<h3>Classe: Boleto</h3>
 		<table class="table table-striped">
@@ -41,30 +42,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>0001</td>
-					<td>28</td>
-					<td>2022-08-13</td>
-					<td>09485034345</td>
-					<td>2022-12-13</td>
-					<td>00190500954014481606906809350314337370000000100</td>
-				</tr>
-				<tr>
-					<td>0023</td>
-					<td>2098</td>
-					<td>2023-04-05</td>
-					<td>43509845774</td>
-					<td>2024-12-13</td>
-					<td>14490500954014481606906809383982176420000010000</td>
-				</tr>
-				<tr>
-					<td>0987</td>
-					<td>2589</td>
-					<td>2022-12-24</td>
-					<td>29385783388</td>
-					<td>2022-12-25</td>
-					<td>23790912300070920651096809383982176420000000002</td>
-				</tr>
+				<c:forEach items="${listagem}" var="b">
+					<tr>
+						<td>${b.codigo}</td>
+						<td>${b.valor}</td>
+						<td>${b.data}</td>
+						<td>${b.nossoNumero}</td>
+						<td>${b.dataVencimento }</td>
+						<td>${b.linhaDigitavel}</td>
+					</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 
