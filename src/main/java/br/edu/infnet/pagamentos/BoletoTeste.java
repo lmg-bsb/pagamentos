@@ -6,6 +6,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import br.edu.infnet.pagamentos.controller.BoletoController;
 import br.edu.infnet.pagamentos.model.domain.Boleto;
 import br.edu.infnet.pagamentos.model.test.AppImpressao;
 
@@ -23,9 +24,8 @@ public class BoletoTeste implements ApplicationRunner{
 		b1.setDataVencimento(LocalDate.of(2022,1,01));
 		b1.setLinhaDigitavel("989843.7593845.345793845.983475.1.98237498");
 		b1.setNossoNumero("346768");
-		
-		AppImpressao.relatorio("Primeiro boleto", b1);
-		
+		BoletoController.incluir(b1);
+
 		Boleto b2 = new Boleto();
 		b2.setCodigo(2);
 		b2.setData(LocalDate.now());
@@ -33,8 +33,7 @@ public class BoletoTeste implements ApplicationRunner{
 		b2.setDataVencimento(LocalDate.of(2023,12,25));
 		b2.setLinhaDigitavel("98328.3274.928.349324.0.567895678");
 		b2.setNossoNumero("102938");
-		
-		AppImpressao.relatorio("Segundo boleto", b2);
+		BoletoController.incluir(b2);
 		
 		Boleto b3 = new Boleto();
 		b3.setCodigo(3);
@@ -43,7 +42,6 @@ public class BoletoTeste implements ApplicationRunner{
 		b3.setDataVencimento(LocalDate.of(2024,5,01));
 		b3.setLinhaDigitavel("6789.65432.6789.532.6.4567898767100");
 		b3.setNossoNumero("2345678");
-		
-		AppImpressao.relatorio("Terceiro boleto", b3);
+		BoletoController.incluir(b3);
 	}
 }
